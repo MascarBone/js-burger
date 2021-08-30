@@ -21,36 +21,33 @@ let bottone = document.getElementById('btn-calculate');
 
 bottone.addEventListener('click',
 function() {
-        nameBurger = document.getElementById('name-burger').value;    
-        priceBurger = 10;
+    nameBurger = document.getElementById('name-burger').value;    
+    priceBurger = 10;
 
-        if (nameBurger == 0)
+    if (nameBurger == 0)
+    {
+        alert("You have to put a name for me to call when the burger is ready!");
+    }else
+    {
+        ingredients = document.getElementsByClassName('ingredient');
+
+        for (let i = 0; i < ingredients.length; i++)
         {
-            alert("You have to put a name for me to call when the burger is ready!");
-        }else
-        {
-            ingredients = document.getElementsByClassName('ingredient');
-
-            for (let i = 0; i < ingredients.length; i++)
+            if (ingredients[i].checked)
             {
-                if (ingredients[i].checked)
-                {
-                    priceBurger += parseInt(ingredients[i].value);
-                }
+                priceBurger += parseInt(ingredients[i].value);
             }
-
-            if(coupons.includes(document.getElementById('coupon').value))
-            {
-                priceBurger = priceBurger * 0.8;
-            }
-
-            console.log(ingredients);
-            console.log(nameBurger);
-            console.log(priceBurger);
-
-            document.getElementById('price').innerHTML = priceBurger + " &euro;";
         }
-}
-);
+
+        if(coupons.includes(document.getElementById('coupon').value))
+        {
+            priceBurger = Math.floor(priceBurger * 0.8);
+        }
+
+        console.log(ingredients);
+
+        document.getElementById('price').innerHTML = priceBurger + " &euro;";
+    }
+});
 
 // while (docu)

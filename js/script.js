@@ -21,10 +21,10 @@ let bottone = document.getElementById('btn-calculate');
 
 bottone.addEventListener('click',
 function() {
-    nameBurger = document.getElementById('name-burger').value;    
+    nameBurger = document.getElementById('name-burger');    
     priceBurger = 10;
 
-    if (nameBurger == 0)
+    if (nameBurger.value.length === 0)
     {
         alert("You have to put a name for me to call when the burger is ready!");
     }else

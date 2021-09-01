@@ -17,98 +17,107 @@
 </head>
 <body>
 
-    <div class="container">
-        <div class="row mt-5 gx-0">
-            <div class="col-6">
-                <header>
-                    <div class="container">
-                        <div class="row mb-5 my_bg-orange">
-                            <div class="col-12">
-                                <h2>Create Your Burger</h2>
-                            </div>
-                        </div>
-                    </div>
-                </header>
-                
-                <main>
-                    <div class="container pb-5">
-                        <div class="row mb-5">
-                            <div class="col-12">
-                                <input id="name-burger" type="text" name="name-burger" placeholder="Name Your Burger">
-                            </div>
-                        </div>
-            
-                        <div class="row mb-3">
-                            <div class="col-12">
-                                <h3>Ingredients</h3>
-                            </div>
-                        </div>
-            
-                        <div class="row mb-5">
-                            <div class="col-6">
-                                <label for="cheese">Cheese</label>
-                                <input id="cheese" class="ingredient" type="checkbox" name="cheese" value="2">
-                                <span>add</span>
-                            </div>
-                            <div class="col-6">
-                                <label for="tomato">Tomato</label>
-                                <input id="tomato" class="ingredient" type="checkbox" name="tomato" value="1.5">
-                            </div>
-                            <div class="col-6">
-                                <label for="egg">Egg</label>
-                                <input id="egg" class="ingredient" type="checkbox" name="egg" value="3">
-                            </div>
-                            <div class="col-6">
-                                <label for="lettuce">Lettuce</label>
-                                <input id="lettuce" class="ingredient" type="checkbox" name="lettuce" value="1">
-                            </div>
-                            <div class="col-6">
-                                <label for="mustard">Mustard</label>
-                                <input id="mustard" class="ingredient" type="checkbox" name="mustard" value="4">
-                            </div>
-                            <div class="col-6">
-                                <label for="ketchup">Ketchup</label>
-                                <input id="ketchup" class="ingredient" type="checkbox" name="ketchup" value="2.5">
-                            </div>
-                        </div>
-            
-                        <div class="row mb-5">
-                            <div class="col-3">
-                                <p>Discount Coupon</p>
-                            </div>
-                            <div class="col-7">
-                                <input id="coupon" type="text">
-                            </div>
-                        </div>
-            
-                        <div class="row">
-                            <div class="col-12 text-center">
-                                <button id="btn-calculate" type="submit">calculate</button>
-                            </div>
-                        </div>
-                    </div>
-            
-                </main>
-            
-                <footer>
-                    <div class="container">
-                        <div class="row text-white my_bg-red align-content-center">
-                            <div class="col-12 d-flex align-content-center">
-                                <h3>Your Price</h3>
-                                <span class="pe-5" id="price">Tot</span>
-                            </div>
-                        </div>
-                    </div>
-                </footer>
-            </div>
+    <header>
+        <div class="container-fluid">
+            <div class="row my_bg-orange">
+                <div class="col-12 col-md-6 pt-5 pb-3 position-relative">
+                    <h2>Create Your Burger</h2>
+                    <img class="my_burger-top-img" src="img/burger-top.png" alt="">                    
+                </div>
+                <div class="col-md-6 my_bg-yellow d-none d-md-block">
 
-
-            <div class="col-6 my_bg-yellow">
-
+                </div>
             </div>
         </div>
-    </div>
-    
+    </header>
+            
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-6">
+                    <div class="row">
+                        <div class="col-12 mt-5 mb-3">
+                            <input id="name-burger" type="text" name="name-burger" placeholder="Name Your Burger">
+                        </div>                                                  
+                        <div class="col-12">
+                            <h3>Ingredients</h3>
+                        </div>
+                    </div>
+        
+                    <div class="row mb-5 gy-3">
+                        <div class="col-12 col-md-6">
+                            <img class="my_ingredient-img" src="img/cheese.svg" alt="">
+                            <label for="cheese">Cheese</label>
+                            <input id="cheese" class="ingredient" type="checkbox" name="cheese" value="2">
+                            <label for="cheese">add</label>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <img class="my_ingredient-img" src="img/tomato.svg" alt="">
+                            <label for="tomato">Tomato</label>
+                            <input id="tomato" class="ingredient" type="checkbox" name="tomato" value="1.5">
+                            <label for="tomato">add</label>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <img class="my_ingredient-img" src="img/fried-egg.svg" alt="">
+                            <label for="egg">Egg</label>
+                            <input id="egg" class="ingredient" type="checkbox" name="egg" value="3">
+                            <label for="egg">add</label>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <img class="my_ingredient-img" src="img/lettuce.svg" alt="">
+                            <label for="lettuce">Lettuce</label>
+                            <input id="lettuce" class="ingredient" type="checkbox" name="lettuce" value="1">
+                            <label for="lettuce">add</label>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <img class="my_ingredient-img" src="img/mustard.svg" alt="">
+                            <label for="mustard">Mustard</label>
+                            <input id="mustard" class="ingredient" type="checkbox" name="mustard" value="4">
+                            <label for="mustard">add</label>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <img class="my_ingredient-img" src="img/ketchup.svg" alt="">
+                            <label for="ketchup">Ketchup</label>
+                            <input id="ketchup" class="ingredient" type="checkbox" name="ketchup" value="2.5">
+                            <label for="ketchup">add</label>
+                        </div>
+                    </div>
+        
+                    <div class="row mb-3">
+                        <div class="col-3">
+                            <label for="id">Discount Coupon</p>
+                        </div>
+                        <div class="col-7">
+                            <input class="border-0 my_bg-yellow" id="coupon" type="text">
+                        </div>
+                    </div>
+        
+                    <div class="row mb-3">
+                        <div class="col-12 text-center">
+                            <button id="btn-calculate" class="my_btn my_bg-orange" type="submit">calculate</button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="col-md-6 my_bg-yellow d-none d-md-block">
+                </div>
+            </div>
+        </div>
+    </main>
+        
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-md-6 d-flex text-white my_bg-red justify-content-between align-items-center">
+                    <h3>Your Price</h3>
+                    <span class="pe-5" id="price">Tot</span>
+                </div>
+                <div class="col-md-6 my_bg-yellow d-none d-md-block">
+                </div>
+            </div>
+        </div>
+    </footer>
+        
     
     <script type="text/javascript" src="js/script.js">
     </script>
